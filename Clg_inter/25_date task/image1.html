@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Connected Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 20px;
+            font-family: Arial;
+        }
+
+        .row {
+            display: flex;
+            width: 100%;
+        }
+
+        .col {
+            border: 2px solid #000;
+            text-align: center;
+        }
+
+        /* HEADER OUTER BOX */
+        .header-container {
+            width: 100%;
+            border: 2px solid #000;
+            margin-bottom: 20px;
+        }
+
+        .header-top {
+            display: flex;
+            width: 100%;
+        }
+
+        .header-logo {
+            width: 30%;
+            height: 80px;
+            border-right: 2px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-banner {
+            width: 70%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-bar {
+            width: 100%;
+            height: 50px;
+            border-top: 2px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* MAIN SECTION */
+        .main {
+            display: flex;
+            width: 100%;
+            height: 520px;
+            margin-bottom: 20px;
+        }
+
+        .left-blocks,
+        .right-blocks {
+            width: 18%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #000;
+        }
+
+        .center-area {
+            width: 64%;
+            display: flex;
+            flex-direction: column;
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+            border-left: none;
+            border-right: none;
+        }
+
+        .center-center {
+            height: 110px;
+            border-bottom: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-middle {
+            display: flex;
+            height: 160px;
+            border-left: 2px solid #000;
+            border-right: 2px solid #000;
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+        }
+
+        .center-left,
+        .center-right {
+            flex: 1;
+            border: none;
+            border-right: 2px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-right {
+            border-right: none;
+        }
+
+        .module-content {
+            height: 110px;
+            border-top: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        /* FOOTER */
+        .footer-bar {
+            width: 100%;
+            height: 50px;
+            align-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER (Single Outer Box) -->
+    <div class="header-container">
+        <div class="header-top">
+            <div class="header-logo">Header Logo</div>
+            <div class="header-banner">Header Banner</div>
+        </div>
+        <div class="header-bar">Header Bar</div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+        <div class="left-blocks">Left Blocks</div>
+
+        <div class="center-area">
+
+            <div class="center-center">Center-Center Blocks</div>
+
+            <div class="center-middle">
+                <div class="center-left">Center-Left Blocks</div>
+                <div class="center-right">Center-Right Blocks</div>
+            </div>
+
+            <div class="module-content">Module Contents</div>
+
+        </div>
+
+        <div class="right-blocks">Right Blocks</div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="row">
+        <div class="col footer-bar">Footer Bar</div>
+    </div>
+
+</body>
+
+</html>

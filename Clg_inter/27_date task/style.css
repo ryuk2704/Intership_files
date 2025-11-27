@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f4f4f4;
+}
+
+/* Navbar */
+.navbar{
+    background: #0d47a1;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    background: white;
+    color: #0d47a1;
+}
+
+/* Hero Section */
+.hero{
+    background: url('./images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+.hero h1{
+    font-size: 50px;
+}
+
+.hero p{
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+/* Common Title */
+.section-title{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 32px;
+}
+
+/* Cards */
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    width: 280px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px gray;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+/* About */
+.about-box{
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 32px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px gray;
+}
+
+/* Contact Form */
+.form-box{
+    width: 350px;
+    background: white;
+    padding: 20px;
+    margin: 25px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px gray;
+}
+
+.form-box input,
+.form-box textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    font-size: 18px;
+}
+
+.form-box button{
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+/* Footer */
+footer{
+    background: #0d47a1;
+    color: white;
+    padding: 25px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 10px;
+    font-size: 18px;
+}
